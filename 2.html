@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+    <style>
+
+
+
+     .content_img{
+    position: relative;
+    width: 100px;
+    height: 200px;
+    float: left;
+    margin-right: 100px;
+    padding-left: 80px;
+    padding-top: 50px;
+}
+.content_img div{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: black;
+    color: white;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;  
+    transition: visibility 0s, opacity 0.5s linear;
+   
+}
+.content_img:hover{
+    cursor: pointer;
+}  
+.content_img:hover div{
+    width: 150px;
+    padding: 8px 16px;
+    visibility: visible;
+    opacity: 0.7;        
+}
+    </style>
+</head>
+<body>
+    <!-- a) Image should be 300 x 200 pixels in size --> 
+    <!-- b) Alternate text should be "Image not found" -->
+    <!-- c) Horizondal and vertical spacing should be 50 pixels and 80 pixels respectively -->
+
+    <img src="https://img.freepik.com/free-photo/happy-lady-stylish-skirt-boater-posing-pink-wall_197531-23653.jpg?w=826&t=st=1664622143~exp=1664622743~hmac=f5075f60adb3c84eee15f5c6de06128bce84b86cf451b348bf0f2809e53d5c46" alt="Image not found" width="300px" height="200px" style="padding:50px 80px ;">
+    
+    <!-- d)Display some text along the cursor when user moves the mouse over the image -->
+   <br>
+    <div class="content_img">
+        <img src='https://img.freepik.com/free-photo/active-woman-with-snow-white-smile-is-dancing-pink-wall-model-orange-blouse-listening-music_197531-14248.jpg?w=826&t=st=1664624562~exp=1664625162~hmac=da92aaf7387524599e76b8fbab54302ffc5123005bbacf9ef2e6771f4f913570' width="300" height="200">
+        <div style="left: 140px;">A women listening to music</div>
+        </div> 
+        
+</body>
+</html>
